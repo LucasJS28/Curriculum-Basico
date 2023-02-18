@@ -13,21 +13,27 @@ html{
     text-decoration: none;
     color:white;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .primero:hover{
     color:red;
     font-size: large;
+    padding: 10px;
+    background: black;
 }
 .segundo:hover{
     color:red;
     font-size: large;
-    
+    padding: 10px;
+    background: black;   
 }
 .tercero:hover{
     color:red;
     font-size: large;
+    padding: 10px;
+    background: black;
+
 }
 
 .Principal{
@@ -52,6 +58,7 @@ html{
     margin-bottom: 150px;
     display: grid;
     justify-content: center;
+    
 }
 
 .listas{
@@ -74,7 +81,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul{
+.nolist{
     list-style: none;
 }
 
@@ -92,3 +99,6 @@ img:hover{
     margin-left: 23%;
 }
 
+.tittle{
+    color: rgba(0, 183, 255, 0.774);
+}
