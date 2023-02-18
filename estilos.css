@@ -54,6 +54,7 @@ html{
 }
 
 .navLateral{
+    background:rgba(0, 0, 0, 0.5);
     width: 170px;
     height: 1200px;
     top: 0;
