@@ -66,6 +66,11 @@ img{
     margin-bottom: 50px;
 }
 
+img:hover{
+    width: 80px;
+    margin-left: 10%;
+}
+
 .tit{
     margin-left: 23%;
 }
