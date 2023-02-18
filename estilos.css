@@ -55,9 +55,9 @@ html{
 }
 
 .navLateral{
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.2);
     width: 170px;
-    height: 1200px;
+    height: 1500px;
     top: 0;
     left: 0;
     position: absolute;
@@ -71,7 +71,6 @@ html{
     margin-bottom: 150px;
     display: grid;
     justify-content: center;
-    
 }
 
 .listas{
@@ -152,6 +151,17 @@ body{
     .imgperfil{
         top: 20%;
         right: 0;
-        width: 200px;
+        width: 180px;
+    }
+
+    body{
+        background-attachment: scroll;
+        background-size: auto;
+    }
+
+    .navv{
+        background: rgb(15, 4, 54);
+        height: 70px;
+        padding: 5px;
     }
 }
