@@ -172,16 +172,18 @@ body{
         width: 40px;
         display: flex;
         position: relative;
+        justify-content: space-around;
     }
 
     body{
         background-attachment: scroll;
         background-size: auto;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),url(fondov2.jpg);
     }
 
     .navv{
-        background: rgb(15, 4, 54);
         height: 70px;
         padding: 5px;
+        justify-content: space-around;
     }   
 }
