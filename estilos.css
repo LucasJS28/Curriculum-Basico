@@ -11,6 +11,8 @@ html{
 .linkss{
     margin: 10px;
     text-decoration: none;
+    padding: 7px;
+    background-color: black;
     color:white;
     padding: 10px;
     border-radius: 20px;
@@ -139,19 +141,37 @@ body{
 }
 
 .tittle{
+    font-size: 35px;
     color: rgba(0, 183, 255, 0.774);
 }
+
 
 @media (max-width: 600px) {
 
     .navLateral{
-        display: none;
+        
+        display: flex;
+        position: absolute;
+        margin-top: 600px;
+        height: 320px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 5%;
     }
 
     .imgperfil{
         top: 20%;
         right: 0;
         width: 180px;
+    }
+
+    .imgon{
+        margin-top: 10px;
+        width: 40px;
+        display: flex;
+        position: relative;
     }
 
     body{
@@ -163,5 +183,5 @@ body{
         background: rgb(15, 4, 54);
         height: 70px;
         padding: 5px;
-    }
+    }   
 }
