@@ -27,6 +27,7 @@
     position: absolute;
     border-style: ridge;
     border-color: #12182c;
+    background-attachment: fixed;
 }
 
 .about{
