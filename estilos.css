@@ -4,6 +4,10 @@
     padding: 20px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .linkss{
     margin: 10px;
     text-decoration: none;
