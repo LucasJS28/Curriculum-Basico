@@ -48,6 +48,7 @@ html{
     transform: scale(1.0);
 }
 .Principal{
+    margin-top: 150px;
     display: grid;
     justify-content: center;
     
@@ -75,6 +76,7 @@ html{
 
 .listas{
     display: flex;
+    justify-content: center;
 }
 .volver{
     color:white;
@@ -97,19 +99,38 @@ body{
     list-style: none;
 }
 
-img{
+.imgperfil{
+    top: 20%;
+    border-radius: 50%;
+    margin-left: 60%;
+    position: absolute;
+    width: 300px;
+}
+
+.imgperfil:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    filter: saturate(180%);
+}
+.imgperfil:not(hover){
+        transition: all .5s ease-in-out;
+        transform: scale(1.0);
+    
+}
+
+.imgon{
     margin-top: 20px;
     margin-left: 9%;
     margin-bottom: 50px;
 }
 
-img:hover{
+.imgon:hover{
     transition: all .3s ease-in-out;
     transform: scale(1.7);
     margin-left: 10%;
 }
 
-img:not(hover){
+.imgon:not(hover){
     transition: all .5s ease-in-out;
     transform: scale(1.0);
 }
@@ -120,4 +141,17 @@ img:not(hover){
 
 .tittle{
     color: rgba(0, 183, 255, 0.774);
+}
+
+@media (max-width: 600px) {
+
+    .navLateral{
+        display: none;
+    }
+
+    .imgperfil{
+        top: 20%;
+        right: 0;
+        width: 200px;
+    }
 }
