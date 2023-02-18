@@ -12,9 +12,22 @@ html{
     margin: 10px;
     text-decoration: none;
     color:white;
-    background: black;
     padding: 10px;
     border-radius: 50%;
+}
+
+.primero:hover{
+    color:red;
+    font-size: large;
+}
+.segundo:hover{
+    color:red;
+    font-size: large;
+    
+}
+.tercero:hover{
+    color:red;
+    font-size: large;
 }
 
 .Principal{
@@ -78,3 +91,4 @@ img:hover{
 .tit{
     margin-left: 23%;
 }
+
