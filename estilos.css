@@ -4,6 +4,7 @@
     padding: 20px;
 }
 
+/* Realiza Animacion al Redireccionar entre la misma Pagina */
 html{
     scroll-behavior: smooth;
 }
@@ -24,12 +25,14 @@ html{
     transform: scale(1.2);
     background: black;
 }
+
 .segundo:hover{
     color:red;
     transition: all .3s ease-in-out;
     transform: scale(1.2);
     background: black;
 }
+
 .tercero:hover{
     color:red;
     transition: all .3s ease-in-out;
@@ -37,23 +40,26 @@ html{
     background: black;
 }
 
+/* Comportamiento al Quitar el cursor sobre el Contenido */
 .primero:not(hover){
     transition: all .5s ease-in-out;
     transform: scale(1.0);
 }
+
 .segundo:not(hover){
     transition: all .5s ease-in-out;
     transform: scale(1.0);
 }
+
 .tercero:not(hover){
     transition: all .5s ease-in-out;
     transform: scale(1.0);
 }
+
 .Principal{
     margin-top: 150px;
     display: grid;
     justify-content: center;
-    
 }
 
 .navLateral{
@@ -79,15 +85,25 @@ html{
     display: flex;
     justify-content: center;
 }
+
 .volver{
     color:white;
     background: #12182c;
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border-radius: 40%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10%;
 }
+
+.volver:hover{
+    color:red;
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
+    background: black;
+}
+/*  background-attachment: fixed;  Deja fijado el Fondo del Body para que no se mueva con el Scroll
+ */
 body{
     background-attachment: fixed;
     background-size: 100%;
@@ -95,7 +111,7 @@ body{
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* list-style: none;   Quita los Puntos que tienen los Li de las Listas */
 .nolist{
     list-style: none;
 }
@@ -107,12 +123,16 @@ body{
     position: absolute;
     width: 300px;
 }
-
+/*  transition: all .3s ease-in-out;     Realiza Transicion Agrandando la Imagen una vez el mouse este arriba
+    transform: scale(1.1);               Aumenta el Tamaño Segun los Numeros dentro del Scale
+    filter: saturate(180%);              Añade Saturacion a los Colores de la Imagen Asignada
+ */
 .imgperfil:hover{
     transition: all .3s ease-in-out;
     transform: scale(1.1);
     filter: saturate(180%);
 }
+
 .imgperfil:not(hover){
         transition: all .5s ease-in-out;
         transform: scale(1.0);
@@ -145,9 +165,14 @@ body{
     color: rgba(0, 183, 255, 0.774);
 }
 
-
+/* Quita el Nav lateral al llegar a los 1300px */
+@media (max-width: 1300px) {
+    .navLateral{
+        display: none;
+    }
+}
+/* Realiza Ajustes al Llegar a los pixeles de un Telefono */
 @media (max-width: 600px) {
-
     .navLateral{
         
         display: flex;
@@ -175,12 +200,16 @@ body{
         justify-content: space-around;
     }
 
+    /*  background-attachment: Especifica que la imagen de fondo se movera junto al Scroll 
+        background-image: Asigna Imagen de fondo y la Oscurese con el linear-gradient y Asigna Nueva imagen a traves de Media Query
+    */
     body{
         background-attachment: scroll;
         background-size: auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),url(fondov2.jpg);
     }
 
+    /* justify-content: space-around :Le dice al espacio que debe situar los objetos dentro del espacio disponible */
     .navv{
         height: 70px;
         padding: 5px;
