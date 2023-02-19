@@ -102,6 +102,12 @@ html{
     transform: scale(1.2);
     background: black;
 }
+
+.volver:not(hover){
+    transition: all .5s ease-in-out;
+    transform: scale(1.0);
+
+}
 /*  background-attachment: fixed;  Deja fijado el Fondo del Body para que no se mueva con el Scroll
  */
 body{
